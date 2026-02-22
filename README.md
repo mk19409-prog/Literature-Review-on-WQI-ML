@@ -22,7 +22,6 @@ The document is prepared using the IEEE LaTeX template and synchronized between 
 ├── main.tex<br>
 ├── references.bib<br>
 ├── Water_Quality_Index_Prediction.pdf<br>
-├── figures/<br>
 └── README.md
 
 
