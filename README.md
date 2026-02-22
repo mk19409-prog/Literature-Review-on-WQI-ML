@@ -19,8 +19,11 @@ The document is prepared using the IEEE LaTeX template and synchronized between 
 
 📂 Repository Structure
 ├── main.tex
+
 ├── reference.bib
+
 ├── Review_WQI_ML.pdf
+
 └── README.md
 
 🛠 How to Compile Locally (LaTeX)
