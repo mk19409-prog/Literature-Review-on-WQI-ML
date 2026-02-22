@@ -19,15 +19,10 @@ The document is prepared using the IEEE LaTeX template and synchronized between 
 
 📂 Repository Structure
 
-
-project-root/<br>
-│<br>
-├── project_file/<br>
-│ ├── main.tex<br>
-│ ├── references.bib<br>
-│ ├── Water_Quality_Index_Prediction.pdf<br>
-│ └── figures/<br>
-│<br>
+├── main.tex<br>
+├── references.bib<br>
+├── Water_Quality_Index_Prediction.pdf<br>
+├── figures/<br>
 └── README.md
 
 
