@@ -21,11 +21,15 @@ The document is prepared using the IEEE LaTeX template and synchronized between 
 
 
 ├── main.tex
+
 ├── reference.bib
+
 ├── Review_WQI_ML.pdf
+
 └── README.md
 
 🛠 How to Compile Locally (LaTeX)
+
 
 Step 1: Install LaTeX
 Install one of the following distributions:
@@ -42,6 +46,7 @@ Step 3: Compile the Document
 - bibtex main
 - pdflatex main.tex
 - pdflatex main.tex
+
 
 
 🌐 How to Use in Overleaf
@@ -61,6 +66,7 @@ Option 2: GitHub Integration
 - Sync changes between Overleaf and GitHub
 
 This allows collaborative editing and version control.
+
 
 📚 Article Selection Criteria
 
