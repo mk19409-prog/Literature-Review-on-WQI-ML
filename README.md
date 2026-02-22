@@ -18,6 +18,7 @@ The objective of this review is to:
 The document is prepared using the IEEE LaTeX template and synchronized between Overleaf and GitHub.
 
 📂 Repository Structure
+
 ├── main.tex
 
 ├── reference.bib
