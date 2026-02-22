@@ -1,8 +1,12 @@
 # 🌊 Machine Learning Approaches for Water Quality Index Prediction: A Systematic Review
 
 Course: CSCI-7090 – Data Science & Machine Learning
+
 Semester: Spring 2026
+
 Team: Team 10
+
+
 
 👥 Group Members:
 1. Md. Rajaul Karim
