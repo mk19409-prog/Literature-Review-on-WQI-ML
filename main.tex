@@ -1,0 +1,236 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Machine Learning Approaches for Water Quality Index Prediction: A Systematic Review}
+
+\author{Group Members: Md. Rajaul Karim and Md. Jahidul Islam }
+
+\maketitle
+
+% \begin{abstract}
+% An abstract section should provide a concise summary of the entire research work. It briefly introduces the research problem and explains its importance. The abstract states the main objective or goal of the study. It summarizes the methodology or approach used to conduct the research. It highlights the key results or findings. Finally, it indicates the significance or contribution of the study in a clear and compact manner.
+
+% \end{abstract}
+
+%Integration of Latex and GitHub Link: \href{https://github.com/JahidulGUB-Islam/LaTeX-Article-and-Linking-to-GitHub-DSML}{GitHub Repository}
+
+% \begin{IEEEkeywords}
+% Component, formatting, style, styling, insert and etc.
+% \end{IEEEkeywords}
+
+\noindent\textbf{GitHub Repository:} 
+\color{blue}\url{https://github.com/mk19409-prog/Literature-Review-on-WQI-ML}\color{black}
+
+
+\noindent\textbf{Detailed Literature Review Sheet:} 
+\color{blue}\url{https://docs.google.com/spreadsheets/d/1uNeQQFx8vY5-hyzwO9BjR6l4s6zKMueg/edit?usp=sharing&ouid=106348839836730303077&rtpof=true&sd=true}\color{black}
+
+
+
+\section{Introduction}
+
+Water is an essential natural resource that supports ecological balance, sustains human livelihoods, and drives agricultural, industrial, and environmental systems. Surface water is one of the numerous water sources that can be utilized to meet the freshwater needs of all societies in the world, such as rivers, lakes and reservoirs \cite{uddin2021review}. Unregulated urbanization, industrial effluents, agricultural activities, and climate-induced events have contributed to the accumulation of major pollutants in waterways. Traditional ways of assessing water quality are often based on lab analysis and manual interpretation; these methods are precise but resource-intensive, time-consuming, and ineffective for real-time or large-scale monitoring. Water Quality Index (WQI) is a quantitative method used to evaluate the overall condition of a water body based on selected physical, chemical, and biological parameters \cite{syeed2023surface}.
+
+Machine learning improves water quality assessment by modeling complex and nonlinear relationships that can adapt in different geographic, seasonal, and hydrological conditions. Different ML models (such as Decision Trees, Random Forests, Support Vector Machines, Regression, and Gradient Boosting) and DL models (Artificial Neural Networks, Convolutional Neural Networks, Recurrent Neural Networks, Long Short-Term Memory networks, and transformers) are widely used for the prediction and forecasting of the water quality index \cite{han2025predicting}. In addition, multi-task learning frameworks allow the simultaneous prediction of multiple WQIs for different water uses by sharing common feature representations while generating task-specific outputs, improving scalability and generalization across diverse contexts \cite{uddin2022robust}.
+
+Most existing WQI models are region-specific (e.g., designed for Canada or Ireland) or source-specific (e.g., rivers or wetlands) and produce a single index based on fixed parameter weightings and thresholds. Such static designs lack flexibility for multi-context environments where water bodies simultaneously support diverse uses such as drinking, agriculture, fisheries etc. These have created a critical research gap for the further review of a universal and adaptive AI-intensive WQI model that will enable mass application to a wide range of purposes with modern sustainability demands. 
+
+
+\section{Methodology}
+For selection the research papers, we have followed the procedure: 
+
+
+\textbf{keyword Used:}
+
+\begin{itemize}
+    \item Water Quality Index (WQI) Prediction/Classification and Machine Learning (ML) Algorithms
+    \item Water Quality Index (WQI) prediction and Artificial Intelligence (AI)
+    \item Water Quality Index (WQI) estimation and Deep Learning (DL)
+    \item Water Quality Index (WQI) prediction and Hybrid Machine Learing Algorithms
+\end{itemize}
+
+\textbf{Databases Accessed:}
+We have accessed the following databases:
+\begin{itemize}
+    \item ScienceDirect
+    \item Scopus
+    \item IEEE Xplore
+    \item Web of Science
+    \item SpringerLink
+    \item Google Scholar
+    \item GALILEO Search
+
+\end{itemize}
+
+
+\textbf{Inclusion and Exclusion criteria}
+We have presented some inclusion and exclusion criteria:
+
+\textbf{Inclusion Criteria }
+\begin{itemize}
+    \item Focused on Water Quality Index (WQI) prediction and classification using solor or hybrid  machine learning.
+    \item High-quality peer-reviewed journal (Elsevier, IEEE, springer (Minumum quartiles: Q1 and Q2)) and conference (Ranked: A and A (star)).
+    \item Research Paper Published in Recent years (e.g, 2022, 2023, 2024, 2025 and 2026).
+    \item Published in the English language.
+    \item Recent/update methodological details.
+    \item Dataset: Authentic sources, complete parameters for WQI.  
+    \item Initial selection Research papers: 35, selected based on our research (WQI): 15, finally selected: 08 journals (WQI related).
+    
+\end{itemize}
+
+\textbf{Exclusion Criteria}
+
+\begin{itemize}
+    \item Insufficient methodological details.
+    \item Journal papers: not peer reviewed; conference papers: not list in the ranking. 
+    \item Predatory journals.
+    \item Dataset: unauthenticated source, insufficient, and incomplete parameters.
+    \item Not written in English.
+    
+\end{itemize}
+
+
+
+
+\begin{table*}[htb!]
+\centering
+\scriptsize
+\renewcommand{\arraystretch}{1.5}
+\caption{Recent State-of-the-Art}
+\label{tab:lit-review}
+
+\begin{tabular} [htb]{|p{1.6cm}|p{3.1cm}|p{2.7cm}|p{3.1cm}|p{2.5cm}|p{2.6cm}|}
+\hline
+\textbf{Reference} & \textbf{Problem addressed} & \textbf{Methods} & \textbf{Findings and contributions} & \textbf{Limitations/Gaps} & \textbf{Dataset} \\
+\hline
+
+(Bataineh et al., 2026)\cite{al2026hybrid},\newline [Q1, IEEE] &
+Comparison to traditional methods, a hybrid model incorporated XGBoost boosting with SHAP-based feature-informed neural network initialization can increase the accuracy of Water Quality Index prediction. &
+
+Models: ANN, XGBoost, and Hybrid ANN + XGBoost model (proposed model)
+Baseline models for comparison: Random Forest, Support Vector Regression, Standard ANN, Standalone XGBoost
+ &
+When compared to random initialization, SHAP-based weight initialization enhanced neural network convergence and performance.
+
+Accuracy: 86.9\%, F1-score: 84.9\%, ROC-AUC: 89.4\% &
+The dataset employed binary classification, although multiple classification is necessary in real life. There is no specific reference of potability measures.&
+
+\href{https://www.kaggle.com/datasets/uom190346a/water-quality-and-potability}{Public Water Potability dataset from Kaggle: }\\
+\hline
+
+
+(Nishat et al., 2025)\cite{nishat2025comparative},\newline [Q1, Springer] & Dhaka rivers are severely contaminated by sewage, industrial discharge, and urban runoff; precise WQI forecasting is required for environmental management. & Machine Learning Models (14): ANN, RFR, Decision Tree Regression, Linear Regression, Ridge Regression, SGD Regressor, XGBoost and etc. & The best result was obtained by ANN (RMSE=2.34, MAE=1.24, NSE=0.97, R2=0.97), followed by Random Forest; ML greatly increases the accuracy of WQI forecasting. & Reliance on historical data, lack of climatic elements, regional dataset limitations, and restricted physicochemical parameters. Very small dataset & 262 samples (2001–2023) from the Bangladesh Water Development Board dataset; rivers: Buriganga, Turag, Balu, and Tongi Khal; parameters: DO, pH, EC, TDS, Fe, and Cl \\
+
+\hline 
+
+(Han et al. 2025)\cite{han2025predicting} [Q1, Elsevier]
+& How to use machine learning to precisely estimate and categorize the Water Quality Index (WQI) to enhance environmental sustainability and urban waste management. & LSTM (Deep learning), Random Forest, Decision Tree, Support Vector Machine. & LSTM performed better than all other models;  RF was second best; DT and SVM fared worse. & Single-municipality dataset; restricted geographic generalization; potential bias in the dataset; computational difficulty; problems with scalability  & Telangana Post-Monsoon Groundwater Quality Data, a Kaggle dataset; parameters: pH, EC, TDS, and SAR; WQI divided into nine classifications (Good–Poor) \\
+
+\hline
+
+(Mohseni et al. 2024)\cite{mohseni2024prediction} [Q1, Elsevier] & 
+
+Groundwater quality must be accurately predicted using AI models because traditional water quality monitoring is expensive and ineffective. & 
+ANN, Multiple Linear Regression, Support Vector Machine, Random Forest, XG-Boost and Stacking Ensemble Model; & All ML models obtained high prediction accuracy; the ensemble model demonstrated the best prediction accuracy, with XG-Boost outperforming the single models. & Lack of meteorological or environmental factors; small dataset size; restricted geographic coverage; computational resource requirements & 54 groundwater samples were taken from 54 wards in Ujjain City, India; the sources were hand pumps, bore wells, and dug wells; the parameters were pH, turbidity, EC, TDS, alkalinity, hardness, chloride, and fluoride.\\
+
+\hline
+
+(Satish et al. 2024)\cite{satish2024performance} [Q1, Elsevier] & How can the shortcomings of traditional neural networks be overcome by a hybrid machine learning framework to increase the accuracy of Water Quality Index (WQI) prediction? & Advanced Deep Learning model (hybrid/optimized architecture)
+Traditional ML models: ANN, SVM, RF, and etc., & shown stability in WQI prediction for complicated nonlinear connections. & Lack of real-time deployment, computational complexity,  &  Physicochemical parameters including pH, DO, BOD, COD, turbidity, temperature, and more are included in this multi-parameter water quality dataset.  \\
+\hline
+
+
+(Uddin et al. 2023)\cite{uddin2023performance} [Q1, Elsevier] & Different classification techniques used by the current Water Quality Index (WQI) models lead to uncertainty and inconsistency in the classification of water quality. & Total 7 WQI Models Used  And Machine Learning Classifiers Used: Naïve Bayes, Support Vector Machine, and K-Nearest Neighbor.
+
+XGBoost & WQM and RMS models demonstrated more reliability, whereas XGBoost performed better than any other model. SVM and NB fared rather poorly, whereas KNN demonstrated 100\% accuracy but overfitting danger. & Study restricted to a single coastal area (Cork Harbour); potential overfitting in the KNN model; reliance on the authors' earlier improved WQI approach;& \href{https://www.catchments.ie/data}{catchments.ie (EPA, Ireland)}\\ 
+
+\hline
+
+
+(Hridoy et al. 2025)\cite{hridoy2025advanced} [Q1, Elsevier] & Protecting aquatic ecosystems and controlling the risks of aquatic diseases depend on accurate water quality classification and exact WQI prediction. Existing machine learning studies lack interpretability and integrated classification + regression frameworks. & Machine Learning Classification Models + Regression Models (WQI Prediction) & LightGBM and XGBoost are the best classification models.
+XGBoost Regressor is the best regression model.
+In both classification and regression tasks, ensemble gradient boosting models perform better than conventional machine learning models. & The dataset's spatiotemporal metadata is limited. 
+Relatively modest dataset size (170 samples initially)
+Absence of deep learning models
+ & Source: Mendeley Data Repository; 4300 processed records for machine learning modeling; 170 original water samples; 14 physicochemical and biological characteristics \\
+\hline
+
+
+
+
+
+\end{tabular}
+\end{table*}
+
+
+
+\section{Literature Review}
+
+Recent research on Water Quality Index (WQI) prediction shows a strong transition from conventional weighted arithmetic models toward machine learning (ML), deep learning (DL), and hybrid ensemble approaches. Across the reviewed papers, the central problem is the limitation of traditional WQI frameworks, including rigid parameter weighting, inconsistent classification schemes, region-specific formulations, and poor generalization across environmental contexts. An exclusive summary of the literature review with most crucial seven papers are presented in Table \ref{tab:lit-review}. A detailed literature review can be found from the access link to the Google Sheet: 
+
+\href{https://docs.google.com/spreadsheets/d/1uNeQQFx8vY5-hyzwO9BjR6l4s6zKMueg/edit?usp=sharing\&ouid=106348839836730303077\&rtpof=true\&sd=true}{Google Sheet}
+
+Most studies relied on region-specific datasets, including:
+
+\begin{itemize}
+    \item Kaggle Water Potability dataset (3276 samples)
+    \item Telangana groundwater dataset (Kaggle)
+    \item Coastal water data from catchments.ie (EPA, Ireland)
+\end{itemize}
+
+Input features typically included physicochemical water quality parameters such as pH, DO, BOD, COD, EC, TDS, turbidity, sulfate, hardness, salinity, and sometimes climate indicators. However, except catchment dataset, many datasets were small and geographically limited \cite{uddin2023performance}.
+
+Most studies applied supervised ML algorithms such as Random Forest (RF), Support Vector Machine (SVM), XGBoost, KNN, Decision Tree, and Artificial Neural Networks (ANN). Results comparison is summarized in the \textit{Key findings and contributions} column of Table \ref{tab:lit-review}. More recent works incorporated:
+
+\begin{itemize}
+    \item Hybrid models (e.g., ANN + XGBoost with SHAP-based initialization – Bataineh et al., 2026) \cite{al2026hybrid}
+    \item Stacking ensemble models (Mohseni et al., 2024) \cite{mohseni2024prediction}
+    \item Advanced deep learning architectures (LSTM, optimized DL frameworks) (Han et al., 2025; Satish et al., 2024) \cite{satish2024performance}
+\end{itemize}
+
+Deep learning models, especially LSTM, consistently outperformed traditional ML methods when temporal patterns were involved. Ensemble and hybrid frameworks generally achieved the highest predictive accuracy and robustness, as summarized in Table \ref{tab:lit-review}.
+
+
+
+However, several important limitations remain. Many studies rely on small, region-specific datasets, restricting broader applicability and scalability. Most models operate under single-task settings, focusing only on regression or classification rather than integrating both. Environmental, climatic, and land-use factors are often insufficiently incorporated. Hybrid and ensemble models can be computationally demanding, and few studies validate their real-time deployment. Most importantly, there is still no universal, adaptive WQI framework capable of functioning across diverse water-use contexts.
+
+Overall, the literature demonstrates clear progress in ML/DL-based WQI prediction, with ensemble and deep learning models showing superior performance. However, current approaches remain fragmented, localized, and task-specific. There is a strong need for a scalable, multitask, and adaptive AI-driven WQI architecture that integrates diverse datasets, supports multi-class classification and regression simultaneously, and generalizes across environmental contexts.
+
+\section{Synthesis and Conclusion}
+
+Water Quality Index (WQI) models have developed to condense complex environmental information into a single representative score. Typically, WQI models adhere to four fundamental steps executed in order to generate the WQI, which include: (a) choosing water quality parameters, (b) generating the sub-indices for those parameters, (c) assigning weights to the parameters, and ultimately, (d) using an aggregation function to compute the final index \cite{uddin2021review}.
+
+Machine learning is data-driven approach that can capture complex, nonlinear relationships among water quality parameters and predict accurate index without relying on fixed mathematical assumptions. Table \ref{tab:lit-review} illustrated an exclusive summary on existing studies. Different machine learning and deep learning models are incorporated to predict water quality indices, refereed to column \textit{Methods} in Table \ref{tab:lit-review} have prediction accuracy ranged from 84\% to 99\% in different dataset for a single water quality index. However, these models are mostly used for estimating single purpose water quality index. On the other hand, most existing research overlook interpretablity, where the explainable artificial intelligence (XAI) helps not only to visualize the parameters responsible for a prediction, but also assist verify which parameters suppose to contribute for an accurate prediction. In real life environment, classification of water quality index play a vital role. In the previous work most of the study solely focus on either binary classification or merging different classes, emphasizing less on real classification of the water quality index models. 
+
+In machine learning based evaluation, dataset play a vital role. In order to calculate WQIs, parameters selection is crucial step as the different indexing models have different set of input parameters. In the existing exploration we found a large collection of water quality datasets. But, only few datasets have the required parameters to calculate different water quality indices. Amon all the datasets, we found Ireland Catchments dataset have the all required parameters with a vast collection data items. It provides comprehensive information on Ireland’s rivers, lakes, groundwater, estuaries, and coastal waters, assessed under the EU Water Framework Directive (WFD). This standardized data collection ensures reliability and supports transferability to other regions with minimal recalibration.
+
+Our project will focus on addressing a crucial limitation of the need of an universal water quality index, incorporating machine learning, where most current WQI models are developed for specific regions, such as Canada or Ireland, or tailored to particular water sources like rivers or wetlands. These models typically generate a single index using predefined parameter weights and fixed threshold values. As a result, they lack the flexibility required for multi-use environments where the same water body may serve drinking, irrigation, fisheries, and other purposes simultaneously. This limitation highlights an important research gap: the need for a more universal and adaptive AI-driven WQI framework capable of supporting large-scale application across diverse environmental contexts while aligning with modern sustainability requirements.
+
+
+\bibliographystyle{IEEEtran}
+
+\bibliography{reference.bib}
+
+
+
+% \begin{thebibliography}{00}
+% \bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
+% \bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
+% \bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
+% \end{thebibliography}
+% \vspace{12pt}
+% \color{red}
+
+
+\end{document}
