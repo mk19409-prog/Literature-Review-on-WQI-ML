@@ -20,13 +20,17 @@ The document is prepared using the IEEE LaTeX template and synchronized between 
 📂 Repository Structure
 
 
-├── main.tex
 
-├── reference.bib
-
-├── Review_WQI_ML.pdf
-
+project-root/
+│
+├── project_file/
+│   ├── main.tex
+│   ├── references.bib
+│   ├── Water_Quality_Index_Prediction.pdf
+│   └── figures/
+│
 └── README.md
+
 
 🛠 How to Compile Locally (LaTeX)
 
