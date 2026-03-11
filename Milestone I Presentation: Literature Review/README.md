@@ -9,6 +9,8 @@ Course: CSCI-7090 – Data Science & Machine Learning
 
 📌 Project Overview: This folder contains the updated Literature Review Latex Project files and Presentation Files on Water Quality Index (WQI) prediction and classification using Machine Learning techniques.
 
+The presentation file of the Milestone-I can be downloaded from the link: [Presentation File: Milestone-1.pptx](https://docs.google.com/presentation/d/14hsVSD2sBVXCeU-btwyaUNq3BU3d3FuL/edit?usp=sharing&ouid=106348839836730303077&rtpof=true&sd=true)
+
 
 📂 Folder Structure
 
@@ -19,7 +21,6 @@ Course: CSCI-7090 – Data Science & Machine Learning
 ├── Milestone -1.pptx<br>
 └── README.md
 
-Milestone -1.pptx file can be downloaded from the link: [Presentation File: Milestone-I](https://docs.google.com/presentation/d/14hsVSD2sBVXCeU-btwyaUNq3BU3d3FuL/edit?usp=sharing&ouid=106348839836730303077&rtpof=true&sd=true)
 
 🛠 How to Compile Locally (LaTeX)
 
