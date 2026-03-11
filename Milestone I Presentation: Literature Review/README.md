@@ -1,33 +1,25 @@
-# 🌊 Machine Learning Approaches for Water Quality Index Prediction: A Systematic Review
+# Milestone I Presentation: Literature Review: Team 10
 
 Course: CSCI-7090 – Data Science & Machine Learning
-
-Semester: Spring 2026
-
-Team: Team 10
-
 
 
 👥 Group Members:
 1. Md. Rajaul Karim
 2. Md. Jahidul Islam
 
-📌 Project Overview: This repository contains our Literature Review on Water Quality Index (WQI) prediction and classification using Machine Learning techniques.
+📌 Project Overview: This folder contains the updated Literature Review Latex Project files and Presentation Files on Water Quality Index (WQI) prediction and classification using Machine Learning techniques.
 
-The objective of this review is to:
-- Analyze recent high-quality research articles (2022–2026)
-- Evaluate ML/DL approaches used for WQI prediction
-- Identify limitations and research gaps
-- Highlight the need for a scalable and adaptive AI-driven WQI framework
-The document is prepared using the IEEE LaTeX template and synchronized between Overleaf and GitHub.
 
-📂 Repository Structure
+📂 Folder Structure
 
 ├── main.tex<br>
 ├── references.bib<br>
-├── Water_Quality_Index_Prediction.pdf<br>
+├── Milestone_I_Literature Review.pdf<br>
+├── IEEEtran.cls<br>
+├── Milestone -1.pptx<br>
 └── README.md
 
+Milestone -1.pptx file can be downloaded from the link: [Presentation File: Milestone-I](https://docs.google.com/presentation/d/14hsVSD2sBVXCeU-btwyaUNq3BU3d3FuL/edit?usp=sharing&ouid=106348839836730303077&rtpof=true&sd=true)
 
 🛠 How to Compile Locally (LaTeX)
 
